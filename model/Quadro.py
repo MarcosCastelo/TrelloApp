@@ -1,40 +1,33 @@
-from model.Lista import *
-from model.Text import *
-from model.Cartao import *
-
 class Quadro:
-    def __init__(self, titulo):
-        self.titulo = titulo
+    def __init__(self):
         self.listas = list()
 
 
-    def getLista(self, titulo_lista):
-        for l in self.listas:
-            if l.getTitulo() == titulo_lista:
-                return l
+    def inLista(self, lista):
+        if lista in self.listas:
+            return True
 
-        return None
-
+        return False
 
 
-    def criaLista(self, tituloLista):
-        lista = Lista(tituloLista)
+    def inserirLista(self, lista):
         self.listas.append(lista)
 
-    def moverCartao(self, nome_cartao, listaOrigem, listaDestino):
-        cartao_movido = self.getLista(listaOrigem).deletaCartao(nome_cartao)
-        text = Text("movido para a lista: " + listaDestino)
-        cartao_movido.addLog(text)
-        self.getLista(listaDestino).adicionaCartao(cartao_movido.getTitulo())
-        print(text.texto)
+
+    def removerLista(self, lista):
+        if inLista(lista):
+            self.listas.remove(lista)
+            return True
+
+        return False
 
 
-    def getCartao(self, nome_cartao, titulo_lista):
-        return self.getLista(titulo_lista).getCartao(nome_cartao)
+    def moverLista(self, lista, index):
+        if inLista(lista):
+            index_inicial = self.listas.index(lista)
+            temp_lista = self.listas[index]
+            self.listas[index] = lista
+            self.listas[index_inicial] = temp_lista
+            return True
 
-
-    def criaCartao(self, titulo_lista, nome_cartao):
-        cartao = Cartao(nome_cartao)
-        self.getLista(titulo_lista).adicionaCartao(cartao)
-
-
+        return False
