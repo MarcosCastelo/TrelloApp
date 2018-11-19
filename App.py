@@ -1,12 +1,11 @@
-from model.Lista import *
+from model.Quadro import *
 
 def main():
-    l = Lista("l")
-    l.adicionarCartao("c")
-    for i in l.cartoes:
-        print(i.titulo)
+    q = Quadro("quadro")
+    q.criaLista("lista")
+    lista = q.getLista("lista")
+    lista.adicionaCartao("cartao")
 
-    print(l.arquivarCartao("c"))
 
 if __name__ == '__main__':
     main()

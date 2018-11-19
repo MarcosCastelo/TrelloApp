@@ -6,11 +6,15 @@ class Lista:
         self.cartoes = list()
 
 
+    def getTitulo(self):
+        return self.titulo
+
+
     def setTitulo(self, novo_titulo):
         self.titulo = novo_titulo
 
 
-    def adicionarCartao(self, nome_Cartao):
+    def adicionaCartao(self, nome_Cartao):
         cartao = Cartao(nome_Cartao)
         self.cartoes.append(cartao)
 
@@ -20,12 +24,12 @@ class Lista:
             if c.getTitulo() == nome_Cartao:
                 return c
 
-        return False
+        return None
 
 
     def arquivarCartao(self, nome_Cartao):
         cartao = self.getCartao(nome_Cartao)
-        if cartao == False:
+        if cartao == None:
             return None
         else:
             index = self.cartoes.index(cartao)

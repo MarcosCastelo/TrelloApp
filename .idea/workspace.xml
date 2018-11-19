@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ff4a2a-d975-445a-a11a-d74ec094c72e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AppTrello.iml" afterPath="$PROJECT_DIR$/.idea/AppTrello.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/App.py" afterPath="$PROJECT_DIR$/App.py" />
-      <change beforePath="$PROJECT_DIR$/model/Cartao.py" afterPath="$PROJECT_DIR$/model/Cartao.py" />
       <change beforePath="$PROJECT_DIR$/model/Lista.py" afterPath="$PROJECT_DIR$/model/Lista.py" />
+      <change beforePath="$PROJECT_DIR$/model/Quadro.py" afterPath="$PROJECT_DIR$/model/Quadro.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +18,8 @@
       <file leaf-file-name="App.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -31,8 +28,8 @@
       <file leaf-file-name="Lista.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Lista.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="221">
+              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -41,8 +38,8 @@
       <file leaf-file-name="Quadro.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Quadro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -51,8 +48,8 @@
       <file leaf-file-name="Cartao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Cartao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="85">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -73,8 +70,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/model/Quadro.py" />
         <option value="$PROJECT_DIR$/model/Cartao.py" />
+        <option value="$PROJECT_DIR$/model/Quadro.py" />
         <option value="$PROJECT_DIR$/App.py" />
         <option value="$PROJECT_DIR$/model/Lista.py" />
       </list>
@@ -193,16 +190,36 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="Quadro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AppTrello" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/Quadro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.Cartao" />
       <item index="1" class="java.lang.String" itemvalue="Python.Lista" />
       <item index="2" class="java.lang.String" itemvalue="Python.App" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Quadro" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python.App" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Lista" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Cartao" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Quadro" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Lista" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Cartao" />
       </list>
     </recent_temporary>
   </component>
@@ -253,34 +270,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model/Cartao.py">
+    <entry file="file://$PROJECT_DIR$/model/Quadro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="357">
+          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Quadro.py">
+    <entry file="file://$PROJECT_DIR$/model/Cartao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Lista.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="221">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
