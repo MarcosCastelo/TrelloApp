@@ -19,9 +19,9 @@ class Lista:
         self.cartoes.append(cartao)
 
 
-    def getCartao(self, nome_Cartao):
+    def getCartao(self, nome_cartao):
         for c in self.cartoes:
-            if c.getTitulo() == nome_Cartao:
+            if c.getTitulo() == nome_cartao:
                 return c
 
         return None
