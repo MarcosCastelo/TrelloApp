@@ -3,7 +3,7 @@ class Quadro:
         self.listas = list()
 
 
-    def inLista(self, lista):
+    def temLista(self, lista):
         if lista in self.listas:
             return True
 
@@ -15,7 +15,7 @@ class Quadro:
 
 
     def removerLista(self, lista):
-        if inLista(lista):
+        if temLista(lista):
             self.listas.remove(lista)
             return True
 
@@ -23,7 +23,7 @@ class Quadro:
 
 
     def moverLista(self, lista, index):
-        if inLista(lista):
+        if temLista(lista):
             index_inicial = self.listas.index(lista)
             temp_lista = self.listas[index]
             self.listas[index] = lista
