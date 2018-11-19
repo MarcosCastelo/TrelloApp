@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ff4a2a-d975-445a-a11a-d74ec094c72e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/model/Log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AppTrello.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AppTrello.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Cartao.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Cartao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Lista.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Lista.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Quadro.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Quadro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Text.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Text.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,12 +24,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="725" />
+          <entry key="py" value="1777" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="725" />
+          <entry key="Python" value="1777" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,28 +47,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Lista.py">
+        <entry file="file://$PROJECT_DIR$/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="250">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Quadro.py">
+        <entry file="file://$PROJECT_DIR$/model/Lista.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="-96">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/Log.py">
+        <entry file="file://$PROJECT_DIR$/model/Quadro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="226">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Cartao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="360">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -89,17 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="72">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -119,12 +109,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/model/Log.py" />
+        <option value="$PROJECT_DIR$/model/Cartao.py" />
+        <option value="$PROJECT_DIR$/model/Text.py" />
         <option value="$PROJECT_DIR$/model/Lista.py" />
         <option value="$PROJECT_DIR$/App.py" />
-        <option value="$PROJECT_DIR$/model/Text.py" />
-        <option value="$PROJECT_DIR$/model/Cartao.py" />
         <option value="$PROJECT_DIR$/model/Quadro.py" />
-        <option value="$PROJECT_DIR$/model/Log.py" />
       </list>
     </option>
   </component>
@@ -315,45 +305,44 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/model/Log.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Cartao.py">
+    <entry file="file://$PROJECT_DIR$/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="250">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Lista.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="-96">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Cartao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Quadro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="226">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

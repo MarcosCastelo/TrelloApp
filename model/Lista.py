@@ -14,8 +14,7 @@ class Lista:
         self.titulo = novo_titulo
 
 
-    def adicionaCartao(self, nome_Cartao):
-        cartao = Cartao(nome_Cartao)
+    def adicionaCartao(self, cartao):
         self.cartoes.append(cartao)
 
 
@@ -27,10 +26,11 @@ class Lista:
         return None
 
 
+    def deletaCartao(self, nome_cartao):
+        cartao = self.getCartao(nome_cartao)
+        index = self.cartoes.index(cartao)
+        return self.cartoes.pop(index)
+
+
     def arquivarCartao(self, nome_Cartao):
-        cartao = self.getCartao(nome_Cartao)
-        if cartao == None:
-            return None
-        else:
-            index = self.cartoes.index(cartao)
-            return self.cartoes.pop(index)
+        self.getCartao(nome_Cartao).arquive()

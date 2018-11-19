@@ -1,4 +1,6 @@
 from model.Lista import *
+from model.Text import *
+from model.Cartao import *
 
 class Quadro:
     def __init__(self, titulo):
@@ -14,14 +16,17 @@ class Quadro:
         return None
 
 
+
     def criaLista(self, tituloLista):
         lista = Lista(tituloLista)
         self.listas.append(lista)
 
     def moverCartao(self, nome_cartao, listaOrigem, listaDestino):
-        cartao_movido = listaOrigem.arquivaCartao(nome_cartao)
-        listaDestino.adicionaCartao(cartao_movido)
-        cartao_movido.registrarLog("")
+        cartao_movido = self.getLista(listaOrigem).deletaCartao(nome_cartao)
+        text = Text("movido para a lista: " + listaDestino)
+        cartao_movido.addLog(text)
+        self.getLista(listaDestino).adicionaCartao(cartao_movido.getTitulo())
+        print(text.texto)
 
 
     def getCartao(self, nome_cartao, titulo_lista):
@@ -29,6 +34,7 @@ class Quadro:
 
 
     def criaCartao(self, titulo_lista, nome_cartao):
-        self.getLista(titulo_lista).adicionaCartao(nome_cartao)
+        cartao = Cartao(nome_cartao)
+        self.getLista(titulo_lista).adicionaCartao(cartao)
 
 
