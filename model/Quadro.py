@@ -1,6 +1,8 @@
 class Quadro:
     def __init__(self, nome):
         self.nome = nome
+        if nome == "":
+            self.nome = "Quadro"
         self.listas = list()
 
 
@@ -39,7 +41,11 @@ class Quadro:
 
 
     def getListas(self):
-        return self.listas
+        lista_listas = []
+        for lista in self.listas:
+            lista_listas.append(lista.getTitulo())
+
+        return lista_listas
 
 
     def getLista(self, index):
