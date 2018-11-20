@@ -55,5 +55,5 @@ class Interface:
             self.cartao_atual = self.lista_atual.getCartao(titulo_cartao)
             if self.cartao_atual:
                 return True
-            
+
         return False
