@@ -1,29 +1,39 @@
 from model.Text import *
 
 class Cartao:
-    def __init__(self, titulo):
-        self.titulo = titulo
-        self.descricao = Text("")
-        self.log = list()
-        self.arquivado = False
+    def __init__(self):
+        self.etiquetas = list()
+        self.descricao = ""
+        self.comentarios = list()
 
 
-    def getTitulo(self):
-        return self.titulo
+    def adicionarEtiqueta(self, etiqueta):
+        self.etiquetas.append(etiqueta)
 
 
-    def addLog(self, text):
-        self.log.append(text)
+    def adicionarDescricao(self, descricao):
+        self.descricao = descricao
 
 
-    def arquive(self):
-        self.arquivado = True
+    def adicionarComentario(self, comentario):
+        self.comentarios.append(comentario)
 
 
-    def restaure(self):
-        self.arquivado = False
+    def removerEtiqueta(self, etiqueta):
+        if etiqueta in self.etiquetas:
+            self.etiquetas.remove(etiqueta)
+            return True
+
+        return False
 
 
-    def setDescricao(self, text):
-        self.descricao = text
+    def removerComentario(self, comentario):
+        if comentario in self.comentarios:
+            self.comentario.remove(comentario)
+            return True
+
+        return False
+
+
+       
 
