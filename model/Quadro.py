@@ -31,3 +31,11 @@ class Quadro:
             return True
 
         return False
+
+
+    def getListas(self):
+        return self.listas
+
+
+    def getLista(self, index):
+        self.getListas()[index]
