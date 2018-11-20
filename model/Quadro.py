@@ -1,6 +1,11 @@
 class Quadro:
-    def __init__(self):
+    def __init__(self, nome):
+        self.nome = nome
         self.listas = list()
+
+
+    def getNome(self):
+        return self.nome
 
 
     def temLista(self, lista):
@@ -39,6 +44,12 @@ class Quadro:
 
     def getLista(self, index):
         self.getListas()[index]
+
+
+    def getLista(self, titulo):
+        for lista in self.getListas():
+            if lista.getTitulo() == titulo:
+                return lista
 
 
     def moverCartao(self, cartao, origem, destino):

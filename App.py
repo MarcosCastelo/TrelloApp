@@ -1,15 +1,11 @@
-from model.Quadro import *
+from model.Interface import *
 
 def main():
-    q = Quadro("quadro")
-    q.criaLista("lista")
-    q.criaCartao("lista", "biribir")
-    print(q.listas[0].cartoes[0].getTitulo())
-    print(q.getCartao("biribir", "lista").getTitulo())
-    q.criaLista("lista2")
-    q.moverCartao("biribir", "lista", "lista2")
+    sistema = Interface()
+    sistema.criarQuadro("Projeto X")
+    sistema.criarLista("Pendencias")
+    print(sistema.quadros[0].listas[0].titulo)
 
-    print(q.listas[0].cartoes)
 
 if __name__ == '__main__':
     main()

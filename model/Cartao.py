@@ -1,10 +1,15 @@
 from model.Text import *
 
 class Cartao:
-    def __init__(self):
+    def __init__(self, titulo):
+        self.titulo = titulo
         self.etiquetas = list()
         self.descricao = ""
         self.comentarios = list()
+
+
+    def getTitulo(self):
+        return self.titulo
 
 
     def adicionarEtiqueta(self, etiqueta):
