@@ -47,7 +47,6 @@ class Quadro:
 
         return lista_listas
 
-
     def getLista(self, index):
         self.getListas()[index]
 

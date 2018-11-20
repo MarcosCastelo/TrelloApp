@@ -3,10 +3,17 @@ import UI
 
 sistema = Interface()
 
-def menuQuadro(operacao):
-
-    if operacao == "1":
-        pass
+def menuQuadro(quadro):
+    print(UI.menuQuadro(quadro))
+    op = input(UI.operacao())
+    while op != "0":
+        if op == "1":
+            titulo_lista = input(UI.criarLista())
+            sistema.criarLista(titulo_lista)
+        elif op == "2":
+            lista_listas = sistema.listarListas()
+            print(UI.listarQuadros(lista_listas))
+            print(UI.fimOperacao())
 
 def main():
     print(UI.menu())
@@ -24,7 +31,7 @@ def main():
         elif op == "3":
             nome_quadro = input(UI.entrarQuadro())
             retorno = sistema.selecionarQuadro(nome_quadro)
-            print("\t", UI.listarListas(retorno[0], retorno[1]))
+            menuQuadro(retorno)
         else:
             print(UI.operacaoInvalida())
         print(UI.menu())

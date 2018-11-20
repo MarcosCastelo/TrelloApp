@@ -10,12 +10,14 @@ def menu():
     return string
 
 
-def menuQuadro():
-    string = "\n1 - Criar Lista" \
+def menuQuadro(quadro):
+    string = "--------------"+quadro+"-------------" \
+             "\n1 - Criar Lista" \
              "\n2 - Listar Listas" \
              "\n3 - Apagar Lista" \
              "\n4 - Sair"
 
+    return string
 
 def criarQuadro():
     string = "\n------------------Criação de Quadro---------------------" \
@@ -36,10 +38,17 @@ def entrarQuadro():
     return "Digite o nome do quadro que deseja entrar: "
 
 
-def listarListas(quadro, listas):
-    string = "\n-------------"+quadro+"---------------"
+def criarLista():
+    string = "\n------------------Criação de Lista---------------------" \
+             "\nInsira o título da lista: "
+
+    return string
+
+
+def listarListas(listas):
+    string = "\n-------------Listas---------------"
     for lista in listas:
-        string += ("\n\t ->" + lista)
+        string += ("\t ->" + lista)
 
     return string
 

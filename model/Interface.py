@@ -24,6 +24,9 @@ class Interface:
         return lista_quadros
 
 
+    def listarListas(self):
+        return self.quadro_atual.getListas()
+
 
     def criarLista(self, titulo_lista):
         if self.quadro_atual:
@@ -43,7 +46,7 @@ class Interface:
         for quadro in self.quadros:
             if quadro.getNome() == nome_quadro:
                 self.quadro_atual = quadro
-                return quadro.getNome(), quadro.getListas()
+                return quadro.getNome()
 
         return None
 
