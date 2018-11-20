@@ -39,3 +39,8 @@ class Quadro:
 
     def getLista(self, index):
         self.getListas()[index]
+
+
+    def moverCartao(self, cartao, origem, destino):
+        origem.removerCartao(cartao)
+        destino.adicionarCartao(cartao)
