@@ -1,8 +1,9 @@
 from model.Quadro import *
 from model.Cartao import *
 from model.Lista import *
+from model.Etiqueta import *
 
-class Interface:
+class Service:
     def __init__(self):
         self.quadros = []
         self.quadro_atual = None
@@ -69,3 +70,9 @@ class Interface:
                 return True
 
         return False
+
+
+    def adicionarEtiqueta(self, cor, titulo):
+        etiqueta = Etiqueta(cor, titulo)
+        self.cartao_atual.adicionarEtiqueta(etiqueta)
+

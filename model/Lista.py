@@ -4,6 +4,10 @@ class Lista:
         self.cartoes = list()
 
 
+    def getTitulo(self):
+        return self.titulo
+
+
     def temCartao(cartao):
         if cartao in self.cartoes:
             return True

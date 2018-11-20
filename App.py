@@ -1,7 +1,19 @@
-from model.Interface import *
+from service.Service import *
 import UI
 
-sistema = Interface()
+sistema = Service()
+
+def menuLista(lista):
+    print(UI.menuLista(lista))
+    op = input(UI.operacao())
+    while op != "0":
+        if op == "1":
+            titulo_cartao = input(UI.criarCartao)
+            sistema.criarCartao(titulo_cartao)
+
+        print(UI.menuLista(lista))
+        op = input(UI.operacao())
+
 
 def menuQuadro(quadro):
     print(UI.menuQuadro(quadro))
@@ -12,8 +24,15 @@ def menuQuadro(quadro):
             sistema.criarLista(titulo_lista)
         elif op == "2":
             lista_listas = sistema.listarListas()
-            print(UI.listarQuadros(lista_listas))
+            print(UI.listarListas(lista_listas))
             print(UI.fimOperacao())
+        elif op == "3":
+            pass
+        else:
+            print(UI.operacaoInvalida())
+
+        print(UI.menuQuadro(quadro))
+        op = input(UI.operacao())
 
 def main():
     print(UI.menu())

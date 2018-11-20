@@ -48,17 +48,17 @@ def criarLista():
 def listarListas(listas):
     string = "\n-------------Listas---------------"
     for lista in listas:
-        string += ("\t ->" + lista)
+        string += ("\n\t ->" + lista)
 
     return string
 
 def listarCartoes(cartoes):
-    print("\n-------------Cartoes---------------")
+    string = "\n-------------Cartoes---------------"
     for cartao in cartoes:
-        print("\t ->", cartao)
+        string += ("\n\t ->", cartao)
 
 def operacaoInvalida():
-    print("Operação Invalida")
+    return "Operação Invalida"
 
 
 def fimOperacao():
