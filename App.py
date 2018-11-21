@@ -1,5 +1,5 @@
 from service.Service import *
-import UI
+from GUI import UI
 
 sistema = Service()
 
