@@ -1,7 +1,8 @@
-from model.Quadro import *
-from model.Cartao import *
-from model.Lista import *
-from model.Etiqueta import *
+from model.Quadro import Quadro
+from model.Cartao import Cartao
+from model.Lista import Lista
+from model.Etiqueta import Etiqueta
+from model.Comentario import Comentario
 
 class Service:
     def __init__(self):
@@ -77,6 +78,7 @@ class Service:
         self.cartao_atual.adicionarEtiqueta(etiqueta)
 
 
-    def adicionarComentario(self, comentario):
+    def adicionarComentario(self, nome, comentario):
+        comentario = Comentario(nome,comentario)
         self.cartao_atual.adicionarComentario(comentario)
 
