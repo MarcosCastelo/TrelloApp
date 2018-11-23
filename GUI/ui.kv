@@ -1,7 +1,84 @@
-<Tarefas>:
+#:set cor_texto .0, .0, .0, 1
+#:set cor_fundo .92, .92, .92, 1
+#:set cor_borda .80, .80, .80, 1
+#:set cor_botao .65, .65, .65, 1
+#:set cor_botao_azul .23, .41, .78, 1
+#:set cor_botao_laranja .93, .52, .31, 1
+
+
+<Lista>:
 	BoxLayout:
-	    id:box
-	    orientation:'vertical'
-	    size_hint_y:None
-	    height: self.minimum_height
+    	orientation: 'vertical'
+		size_hint: None, None
+		width: 400
+		height:300
+		BoxLayout
+			Label:
+				valign: 'top'
+				color: cor_texto
+				id:lista_label
+				text: "FLOR2"
+			Button:
+				text: "-"
+		Label:
+			text:"Teste"
+
+		
+
+<Listas>:
+	BoxLayout:
+		orientation: 'vertical'
+		ActionBar:
+            ActionView:
+                ActionPrevious:
+                    title:'Tarefas'
+                ActionButton: 
+                	on_release: root.mudar_tela('listas')
+		ScrollView:
+            BoxLayout:
+                id:listas
+                orientation:'horizontal'
+                size_hint_x:None
+                width:self.minimum_width
+                padding: 15,15
+
+        BoxLayout:
+        	size_hint: 1, None
+			TextInput:
+				id:texto
+				width: 400
+				height: 150
+			Button:
+				text: "+"
+
+
+<Menu>:
+	BoxLayout:
+		Button:
+		Button:
+		Button:
+
+<Quadros>:
+	ScrollView:
+		orientation: "vertical"
+		BoxLayout:
+			id:area_quadros
+			Button:
+				text: 'Projeto'
+				on_release: app.root.get_screen('listas').atualizar(self.text)
+				on_release: root.mudar_tela('listas')
+	BoxLayout:
+		size_hint: 1, None
+		TextInput:
+			id:texto
+			width: 400
+			height: 150
+		Button:
+			text: "+"
+
+<EditarCartao>:
+	BoxLayout:
+		Label:
+		Button:
+
 
