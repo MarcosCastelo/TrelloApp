@@ -76,3 +76,7 @@ class Service:
         etiqueta = Etiqueta(cor, titulo)
         self.cartao_atual.adicionarEtiqueta(etiqueta)
 
+
+    def adicionarComentario(self, comentario):
+        self.cartao_atual.adicionarComentario(comentario)
+
