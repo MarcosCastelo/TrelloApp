@@ -1,71 +1,49 @@
-from kivy.app import App
-from service.Storage import *
-from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.screenmanager import ScreenManager, Screen, NoTransition, SlideTransition
-from kivy.uix.widget import Widget
-from kivy.uix.button import Button
-from kivy.core.window import Window
-from kivy.lang.builder import Builder
+def menuInicial(quadros):
+	print("Quadros:")
+	print(fimOperacao())
+	exibirQuadros(quadros)
 
-Builder.load_file('ui.kv')
-Window.clearcolor = .45, .45, .45, 1
-
-storage = Storage()
-storage.inserirListas('Projeto', ['todo', 'doing'])
-storage.inserirListas('BLA', ['1', '2', '3'])
+	print("\n------------TrelloApp--------------")
+	print("1 - Criar Quadro")
+	print("2 - Acessar Quadro")
+	print("3 - Remover Quadro\n\n")
 
 
-class Geral():
-	def mudar_tela(self, nome_tela, tipo_transicao='Slide', direcao='left'):
-		if (tipo_transicao == 'Slide'):
-			self.manager.transition = SlideTransition()
-		else:
-			self.manager.transition = NoTransition()
-		self.manager.transition.direction = direcao
-		self.manager.current = nome_tela
-
-class Listas(Screen,Geral):
-	def atualizar(self, nome_quadro):
-		listas = storage.buscaListas(nome_quadro)
-		self.ids.listas.clear_widgets()
-		for lista in listas:
-			print(listas)
-			self.ids.listas.add_widget(Lista(text=lista))
-			self.ids.listas.add_widget(Cartao(text=lista))
-
-class Lista(BoxLayout):
-	def __init__(self,text,**kwargs):
-		super().__init__(**kwargs)
-		self.ids.label.text = text
-		self.remove_widget(self.children[0])
-        
-
-class Quadros(Screen, Geral):
-	pass
-
-class Cartao(BoxLayout):
-	def __init__(self,text,**kwargs):
-		super().__init__(**kwargs)
-		self.ids.label.text = text
-		self.remove_widget(self.children[1])
-		
+def menuQuadro(quadro):
+	print("---------------"+quadro+"--------------")
+	print("1 - Criar Lista")
+	print("2 - Acessar Cartão")
+	print("3 - Mover Lista")
+	print("4 - Mover Cartão")
+	print("5 - Remover Lista\n\n")
 
 
-class Menu(Screen, Geral):
-	pass
 
-gerenciador = ScreenManager()
-gerenciador.add_widget(Listas(name='listas'))
-gerenciador.add_widget(Quadros(name='quadros'))
 
-gerenciador.current = 'quadros'
+def menuCartao():
+	print("1 - Adicionar Comentario")
+	print("2 - Excluir Comentario")
+	print("3 - Adicionar Etiqueta")
+	print("4 - Remover Etiqueta")
 
-class Quadros(Screen, Geral):
-	pass
 
-class UI(App):
-	title = 'Editor de Imagens'
-	def build(self):
-		return gerenciador
+def exibirQuadros(quadros):
+	for quadro in quadros:
+		print("\t -0-", quadro)
 
-UI().run()
+
+def exibirLista(lista, cartoes):
+	print("\t->",lista)
+	for cartao in cartoes:
+		print("\t #", cartao)
+
+def fimOperacao():
+	return "----------------------------------\n"
+
+
+def erro():
+	print("Erro de Operacao")
+
+
+def sucesso():
+	print("Operacao realizada com sucesso")

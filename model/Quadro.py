@@ -41,11 +41,16 @@ class Quadro:
 
 
     def getListas(self):
-        lista_listas = []
-        for lista in self.listas:
-            lista_listas.append(lista.getTitulo())
+        self.listas
 
-        return lista_listas
+
+    def getListasTitulo(self):
+        titulos_listas = []
+        for lista in self.getListas():
+            titulos_listas.append(lista.getTitulo())
+
+        return titulos_listas
+
 
     def getLista(self, index):
         self.getListas()[index]
@@ -56,7 +61,6 @@ class Quadro:
             if lista.getTitulo() == titulo:
                 return lista
 
-
-    def moverCartao(self, cartao, origem, destino):
+    def moverCartao(self, cartao, destino):
         origem.removerCartao(cartao)
         destino.adicionarCartao(cartao)

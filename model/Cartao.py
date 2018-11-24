@@ -1,5 +1,3 @@
-from model.Text import *
-
 class Cartao:
     def __init__(self, titulo):
         self.titulo = titulo

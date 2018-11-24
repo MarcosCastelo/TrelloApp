@@ -1,61 +1,70 @@
 from service.Service import *
-from GUI import UI
+from GUI import Ui
 import os
 
 sistema = Service()
 
 def menuLista(lista):
-    print(UI.menuLista(lista))
-    op = input(UI.operacao())
+    print(Ui.menuLista(lista))
+    op = input(Ui.operacao())
     while op != "0":
         if op == "1":
-            titulo_cartao = input(UI.criarCartao)
+            titulo_cartao = input(Ui.criarCartao)
             sistema.criarCartao(titulo_cartao)
 
-        print(UI.menuLista(lista))
-        op = input(UI.operacao())
+        print(Ui.menuLista(lista))
+        op = input(Ui.operacao())
 
 
 def menuQuadro(quadro):
-    print(UI.menuQuadro(quadro))
-    op = input(UI.operacao())
+    Ui.menuQuadro(quadro)
+    op = input()
     while op != "0":
         if op == "1":
-            titulo_lista = input(UI.criarLista())
+            titulo_lista = input()
             sistema.criarLista(titulo_lista)
         elif op == "2":
-            lista_listas = sistema.listarListas()
-            print(UI.listarListas(lista_listas))
-            print(UI.fimOperacao())
+            cartao = sistema.listarListas()
+            print(Ui.listarListas(lista_listas))
+            print(Ui.fimOperacao())
         elif op == "3":
             pass
         else:
-            print(UI.operacaoInvalida())
+            print(Ui.operacaoInvalida())
 
-        print(UI.menuQuadro(quadro))
-        op = input(UI.operacao())
+        Ui.menuQuadro(quadro)
+        op = input(Ui.operacao())
 
-def main():
-    print(UI.menu())
-    op = input(UI.operacao())
+def menu():
+    Ui.menuInicial(sistema.listarQuadros())
+    op = input()
 
     while op != "0":
         if op == "1":
-            nome_quadro = input(UI.criarQuadro())
+            print("criarQuadro")
+            nome_quadro = input()
             sistema.criarQuadro(nome_quadro)
-            print(UI.fimOperacao())
+            Ui.exibirQuadros(sistema.listarQuadros())
+            
         elif op == "2":
-            lista_quadros = sistema.listarQuadros()
-            print(UI.listarQuadros(lista_quadros))
-            print(UI.fimOperacao())
+            nome_quadro = input()
+            sistema.selecionarQuadro(nome_quadro)
+            menuQuadro(nome_quadro)
+           
         elif op == "3":
-            nome_quadro = input(UI.entrarQuadro())
-            retorno = sistema.selecionarQuadro(nome_quadro)
-            menuQuadro(retorno)
+            nome_quadro = input()
+            if sistema.removerQuadro(nome_quadro):
+                Ui.sucesso()
+            else:
+                Ui.erro()
         else:
-            print(UI.operacaoInvalida())
-        print(UI.menu())
-        op = input(UI.operacao())
+            print(Ui.operacaoInvalida())
+        Ui.menuInicial(sistema.listarQuadros())
+        op = input()
+
+
+def main():
+    menu()
 
 if __name__ == '__main__':
     main()

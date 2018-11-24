@@ -17,6 +17,13 @@ class Service:
         self.quadros.append(quadro)
         self.quadro_atual = quadro
 
+    def removerQuadro(self, nome_quadro):
+        try:
+            self.quadros.remove(self.selecionarQuadro(nome_quadro))
+            return True
+        except:
+            return False
+
 
     def listarQuadros(self):
         lista_quadros = []
@@ -27,7 +34,7 @@ class Service:
 
 
     def listarListas(self):
-        return self.quadro_atual.getListas()
+        return self.quadro_atual.getListasTitulo()
 
 
     def criarLista(self, titulo_lista):
@@ -48,7 +55,7 @@ class Service:
         for quadro in self.quadros:
             if quadro.getNome() == nome_quadro:
                 self.quadro_atual = quadro
-                return quadro.getNome()
+                return quadro
 
         return None
 
@@ -68,9 +75,9 @@ class Service:
         if self.lista_atual:
             self.cartao_atual = self.lista_atual.getCartao(titulo_cartao)
             if self.cartao_atual:
-                return True
-
-        return False
+                return cartao_atual
+        else:
+            return None
 
 
     def adicionarEtiqueta(self, cor, titulo):
