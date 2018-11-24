@@ -9,13 +9,17 @@ def menuInicial(quadros):
 	print("3 - Remover Quadro\n\n")
 
 
-def menuQuadro(quadro):
-	print("---------------"+quadro+"--------------")
+def menuQuadro(quadro, listas):
+	print("---------------"+quadro+"--------------\n")
+
+	print("Listas:")
+	print(fimOperacao())
+	exibirQuadros(listas)
+
 	print("1 - Criar Lista")
-	print("2 - Acessar Cartão")
+	print("2 - Acessar Lista")
 	print("3 - Mover Lista")
-	print("4 - Mover Cartão")
-	print("5 - Remover Lista\n\n")
+	print("4 - Remover Lista\n\n")
 
 
 
@@ -30,6 +34,10 @@ def menuCartao():
 def exibirQuadros(quadros):
 	for quadro in quadros:
 		print("\t -0-", quadro)
+
+def exibirLista(quadros):
+	for lista in listas:
+		print("\t ->", lista)
 
 
 def exibirLista(lista, cartoes):

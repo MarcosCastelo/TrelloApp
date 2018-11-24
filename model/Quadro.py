@@ -20,13 +20,29 @@ class Quadro:
     def inserirLista(self, lista):
         self.listas.append(lista)
 
+    def inserirListaP(self,lista,posicao):
+        if len(self.listas) >= posicao:
+            self.inserirLista(lista)
+            for i in range(posicao,len(self.listas)-1):
+                self.listas[i+1] = self.listas[i]
+
+            self.listas[posicao] = lista
+            return True
+        return False
 
     def removerLista(self, lista):
-        if temLista(lista):
+        if self.temLista(lista):
             self.listas.remove(lista)
             return True
 
         return False
+
+    def removerListaTitulo(self, titulo_lista):
+        lista = self.getLista(titulo_lista)
+        if lista:
+            return self.removerLista(lista)
+        else:
+            return False
 
 
     def moverLista(self, lista, index):
@@ -41,7 +57,7 @@ class Quadro:
 
 
     def getListas(self):
-        self.listas
+        return self.listas
 
 
     def getListasTitulo(self):

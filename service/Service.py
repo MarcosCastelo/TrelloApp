@@ -43,6 +43,10 @@ class Service:
             self.quadro_atual.inserirLista(lista)
             self.lista_atual = lista
 
+    def removerLista(self, titulo_lista):
+        if self.quadro_atual:
+            self.quadro_atual.removerListaTitulo(titulo_lista)
+
 
     def criarCartao(self, titulo_cartao):
         if self.lista_atual:
@@ -62,12 +66,12 @@ class Service:
 
     def selecionarLista(self, titulo_lista):
         self.lista_atual = None
-        if self.quadro_selecionado:
+        if self.quadro_atual:
             self.lista_atual = self.quadro_atual.getLista(titulo_lista)
             if self.lista_atual:
-                return True
+                return self.lista_atual
 
-        return False
+        return None
 
 
     def selecionarCartao(self, titulo_cartao):
@@ -89,3 +93,9 @@ class Service:
         comentario = Comentario(nome,comentario)
         self.cartao_atual.adicionarComentario(comentario)
 
+
+    def moverLista(self, titulo_lista, destino, posicao):
+        lista = self.selecionarLista(titulo_lista)
+        destino = self.selecionarQuadro(destino)
+        self.removerLista(titulo_lista)
+        return destino.inserirListaP(lista, posicao)
